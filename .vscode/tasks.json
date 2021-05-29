@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "label": "Deploy projects/officesupplies/mta_archives/officesupplies_1.0.0.mtar",
+      "type": "deploy-mta",
+      "taskType": "Deploy",
+      "mtarPath": "/home/user/projects/officesupplies/mta_archives/officesupplies_1.0.0.mtar",
+      "extPath": ""
+    },
+    {
+      "label": "cds-deploy-bookshop-sqlite.db",
+      "type": "shell",
+      "command": "cds",
+      "args": [
+        "deploy",
+        "--to",
+        "sqlite:sqlite.db",
+        "--no-save"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/bookshop"
+      },
+      "isBackground": true,
+      "problemMatcher": [
+        "$cap-sqlite-bind-handler"
+      ]
+    }
+  ],
+  "version": "2.0.0"
+}

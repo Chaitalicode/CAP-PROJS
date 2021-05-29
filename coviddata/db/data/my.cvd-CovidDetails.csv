@@ -1,0 +1,101 @@
+SID,ID_ID,date,county,state,cases,deaths
+1,1,03-05-2021,Autauga,Alabama,6909,107
+2,1,03-05-2021,Baldwin,Alabama,20983,306
+3,1,03-05-2021,Barbour,Alabama,2302,56
+4,1,03-05-2021,Bibb,Alabama,2596,63
+5,1,03-05-2021,Blount,Alabama,6619,135
+6,1,03-05-2021,Bullock,Alabama,1229,41
+7,1,03-05-2021,Butler,Alabama,2154,69
+8,1,03-05-2021,Calhoun,Alabama,14450,312
+9,1,03-05-2021,Chambers,Alabama,3545,123
+10,1,03-05-2021,Cherokee,Alabama,1837,45
+11,2,03-05-2021,Chilton,Alabama,4240,111
+12,2,03-05-2021,Choctaw,Alabama,603,24
+13,2,03-05-2021,Clarke,Alabama,3502,60
+14,2,03-05-2021,Clay,Alabama,1533,56
+15,2,03-05-2021,Cleburne,Alabama,1483,41
+16,2,03-05-2021,Coffee,Alabama,5489,115
+17,2,03-05-2021,Colbert,Alabama,6279,134
+18,2,03-05-2021,Conecuh,Alabama,1100,28
+19,3,03-05-2021,Coosa,Alabama,1068,28
+20,3,03-05-2021,Covington,Alabama,4105,117
+21,3,03-05-2021,Crenshaw,Alabama,1515,57
+22,3,03-05-2021,Cullman,Alabama,9615,193
+23,3,03-05-2021,Dale,Alabama,4810,111
+24,3,03-05-2021,Dallas,Alabama,3536,150
+25,3,03-05-2021,DeKalb,Alabama,8811,185
+26,3,03-05-2021,Elmore,Alabama,10013,205
+27,3,03-05-2021,Escambia,Alabama,3925,75
+28,3,03-05-2021,Etowah,Alabama,13792,352
+29,3,03-05-2021,Fayette,Alabama,2119,62
+30,5,03-05-2021,Franklin,Alabama,4238,82
+31,5,03-05-2021,Geneva,Alabama,2469,75
+32,5,03-05-2021,Greene,Alabama,922,34
+33,5,03-05-2021,Hale,Alabama,2217,76
+34,5,03-05-2021,Henry,Alabama,1884,44
+35,7,03-05-2021,Houston,Alabama,10503,280
+36,7,03-05-2021,Jackson,Alabama,6790,110
+37,7,03-05-2021,Jefferson,Alabama,76199,1516
+38,7,03-05-2021,Lamar,Alabama,1411,34
+39,7,03-05-2021,Lauderdale,Alabama,9393,238
+40,8,03-05-2021,Lawrence,Alabama,2996,98
+41,8,03-05-2021,Lee,Alabama,15796,168
+42,8,03-05-2021,Limestone,Alabama,9933,150
+43,8,03-05-2021,Lowndes,Alabama,1383,53
+44,8,03-05-2021,Macon,Alabama,1586,49
+45,8,03-05-2021,Madison,Alabama,34555,501
+46,8,03-05-2021,Marengo,Alabama,2485,64
+47,8,03-05-2021,Marion,Alabama,3092,100
+48,9,03-05-2021,Marshall,Alabama,12164,222
+49,9,03-05-2021,Mobile,Alabama,40832,804
+50,9,03-05-2021,Monroe,Alabama,1761,40
+51,9,03-05-2021,Montgomery,Alabama,24252,585
+52,9,03-05-2021,Morgan,Alabama,14246,279
+53,10,03-05-2021,Perry,Alabama,1075,26
+54,10,03-05-2021,Pickens,Alabama,2335,59
+55,10,03-05-2021,Pike,Alabama,3091,77
+56,10,03-05-2021,Randolph,Alabama,1791,41
+57,10,03-05-2021,Russell,Alabama,4379,38
+58,11,03-05-2021,Shelby,Alabama,23350,246
+59,11,03-05-2021,St. Clair,Alabama,9580,237
+60,11,03-05-2021,Sumter,Alabama,1041,32
+61,11,03-05-2021,Talladega,Alabama,8181,175
+62,11,03-05-2021,Tallapoosa,Alabama,4002,150
+63,12,03-05-2021,Tuscaloosa,Alabama,25633,451
+64,12,03-05-2021,Walker,Alabama,7205,279
+65,12,03-05-2021,Washington,Alabama,1667,39
+66,12,03-05-2021,Wilcox,Alabama,1264,28
+67,13,03-05-2021,Winston,Alabama,2734,72
+68,13,03-05-2021,Aleutians East Borough,Alaska,364,3
+69,13,03-05-2021,Aleutians West Census Area,Alaska,690,0
+70,13,03-05-2021,Anchorage,Alaska,29964,171
+71,13,03-05-2021,Bethel Census Area,Alaska,3874,21
+72,14,03-05-2021,Bristol Bay plus Lake and Peninsula,Alaska,194,0
+73,14,03-05-2021,Denali Borough,Alaska,101,0
+74,14,03-05-2021,Dillingham Census Area,Alaska,228,2
+75,14,03-05-2021,Fairbanks North Star Borough,Alaska,7567,37
+76,14,03-05-2021,Haines Borough,Alaska,28,0
+77,14,03-05-2021,Juneau City and Borough,Alaska,1351,3
+78,14,03-05-2021,Kenai Peninsula Borough,Alaska,4406,19
+79,15,03-05-2021,Ketchikan Gateway Borough,Alaska,424,1
+80,15,03-05-2021,Kodiak Island Borough,Alaska,1101,5
+81,15,03-05-2021,Kusilvak Census Area,Alaska,1275,4
+82,15,03-05-2021,Matanuska-Susitna Borough,Alaska,11319,45
+83,15,03-05-2021,Nome Census Area,Alaska,351,0
+84,15,03-05-2021,North Slope Borough,Alaska,1065,4
+85,16,03-05-2021,Northwest Arctic Borough,Alaska,613,2
+86,16,03-05-2021,Petersburg Borough,Alaska,159,0
+87,16,03-05-2021,Prince of Wales-Hyder Census Area,Alaska,96,1
+88,16,03-05-2021,Sitka City and Borough,Alaska,338,0
+89,16,03-05-2021,Skagway Municipality,Alaska,20,0
+90,16,03-05-2021,Southeast Fairbanks Census Area,Alaska,667,4
+91,16,03-05-2021,Unknown,Alaska,288,0
+92,16,03-05-2021,Valdez-Cordova Census Area,Alaska,635,2
+93,16,03-05-2021,Wrangell City and Borough,Alaska,51,0
+94,17,03-05-2021,Yakutat plus Hoonah-Angoon,Alaska,71,2
+95,17,03-05-2021,Yukon-Koyukuk Census Area,Alaska,358,4
+96,17,03-05-2021,Apache,Arizona,11335,428
+97,17,03-05-2021,Cochise,Arizona,11922,284
+98,20,03-05-2021,Coconino,Arizona,17745,329
+99,20,03-05-2021,Gila,Arizona,6899,227
+100,20,03-05-2021,Graham,Arizona,5550,78
