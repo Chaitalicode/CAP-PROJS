@@ -33,3 +33,7 @@ default-env.json
 
 # auto generated wildcard
 officesupplies/.env
+# auto generated wildcard
+bookshop/gen/db/.env
+# auto generated wildcard
+officesupplies/gen/db/.env
