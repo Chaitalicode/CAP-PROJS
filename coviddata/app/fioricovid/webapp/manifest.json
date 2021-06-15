@@ -1,0 +1,176 @@
+{
+    "_version": "1.32.0",
+    "sap.app": {
+        "id": "fioricovid",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "dataSources": {
+            "mainService": {
+                "uri": "/covid/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "4.0"
+                }
+            }
+        },
+        "offline": false,
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "ui5template.fiorielements.v4.lrop",
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "resources": {
+            "js": [],
+            "css": []
+        },
+        "dependencies": {
+            "minUI5Version": "1.76.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.fe.templates": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true
+                }
+            }
+        },
+        "extends": {
+            "extensions": {
+            "sap.ui.controllerExtensions": {
+                "sap.fe.templates.ListReport.ListReportController": {
+                    "controllerName": "fioricovid.ext.controller.listPageExt"
+                },
+                "sap.fe.templates.ObjectPage.ObjectPageController": {
+                    "controllerName": "fioricovid.ext.controller.objectPageExt"
+                }
+            }
+        }
+    },
+        "routing": {
+            "routes": [
+                {
+                    "pattern": ":?query:",
+                    "name": "CovidsList",
+                    "target": "CovidsList"
+                },
+                {
+                    "pattern": "Covids({key}):?query:",
+                    "name": "CovidsObjectPage",
+                    "target": "CovidsObjectPage"
+                },
+                    {
+                        "pattern": "Covids({key})/covidDetails({key2}):?query:",
+                        "name": "CovidDetailsObjectPage",
+                        "target": "CovidDetailsObjectPage"
+                    }
+            ],
+            "targets": {
+                "CovidsList": {
+                    "type": "Component",
+                    "id": "CovidsList",
+                    "name": "sap.fe.templates.ListReport",
+                    "options": {
+                        "settings": {
+                            "entitySet": "Covids",
+                            "tableSettings": {                                    
+                                        "type": "ResponsiveTable",
+                                        "multiSelect": true,
+                                        "personalization":{                                          
+                                            "column": true,                                          
+                                            "sort": true                                      
+                                        }
+                                    },
+                            "variantManagement": "Page",
+                            "navigation": {
+                                "Covids": {
+                                    "detail": {
+                                        "route": "CovidsObjectPage"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "CovidsObjectPage": {
+                    "type": "Component",
+                    "id": "CovidsObjectPage",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings": {
+                            "entitySet": "Covids",
+                                "navigation": {
+                                    "covidDetails": {
+                                        "detail": {
+                                            "route": "CovidDetailsObjectPage"
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                },
+                    "CovidDetailsObjectPage": {
+                        "type": "Component",
+                        "id": "CovidDetailsObjectPage",
+                        "name": "sap.fe.templates.ObjectPage",
+                        "options": {
+                            "settings": {
+                                "entitySet": "CovidDetails"
+                            }
+                        }
+                    }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    },
+    "sap.platform.abap": {
+        "_version": "1.1.0",
+        "uri": ""
+    },
+    "sap.platform.hcp": {
+        "_version": "1.1.0",
+        "uri": ""
+    },
+    "sap.fiori": {
+        "_version": "1.1.0",
+        "registrationIds": [],
+        "archeType": "transactional"
+    }
+}

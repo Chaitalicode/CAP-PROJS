@@ -1,31 +1,53 @@
 {
-    "name": "coviddata",
-    "version": "1.0.0",
-    "description": "A simple CAP project.",
-    "repository": "<Add your repository here>",
-    "license": "UNLICENSED",
-    "private": true,
-    "dependencies": {
-        "@sap/cds": "^4.6.5",
-        "@sap/cds-runtime": "^3.0.9",
-        "express": "^4",
-        "@sap/hana-client": "^2.6.61"
-    },
-    "devDependencies": {
-        "sqlite3": "^5.0.2"
-    },
-    "scripts": {
-        "start": "cds run"
-    },
-    "cds": {
+  "name": "coviddata",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4.6.5",
+    "@sap/cds-runtime": "^3.0.9",
+    "@sap/hana-client": "^2.6.61",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.0.0",
+    "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "test": "mocha test/test.js --timeout 15000 --exit",
+    "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql",
+        "model": "*"
+      },
+      "Northwind": {
+        "kind": "odata",
+        "model": "srv/external/Northwind"
+      },
+      "[local]": {
         "requires": {
-            "db": {
-                "kind": "sql",
-                "model": "*"
+          "NorthWind": {
+            "kind": "odata",
+            "model": "srv/external/NorthWind",
+            "credentials": {
+              "url": "https://services.odata.org/V4/Northwind/Northwind.svc/"
             }
-        },
-        "hana": {
-            "deploy-format": "hdbtable"
+          }
         }
+      }
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
     }
+  },
+  "sapux": [
+    "app/fioricovid"
+  ]
 }
